@@ -1,15 +1,24 @@
 import images from "./images/5.jpg";
 import "./App.css";
+import Dictionary from "./Dictionary";
 
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={images} className="App-logo img-fluid" alt="nature" />
-        <a href="#" className="btn btn-primary">
-          Hello world
-        </a>
-      </header>
+      <div className="container">
+        <header className="App-header">
+          <img
+            src={images}
+            className="App-logo 
+        img-fluid"
+            alt="nature"
+          />
+        </header>
+        <main>
+          <Dictionary />
+        </main>
+        <footer className="App-footer">Coded by Bih Jovi</footer>
+      </div>
     </div>
   );
 }
